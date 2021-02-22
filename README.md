@@ -10,5 +10,5 @@ $ yarn # Install dependencies
 $ yarn start # Start the crawler
 ```
 ---
-![](assets/img/demo.png)
+![Demo Image](assets/img/demo.png)
 
