@@ -40,6 +40,10 @@ getSum = async (getCount) => {
                 currencyType = "NTD";
             } else if (USD_REGEX.test(data[0])) {
                 currencyType = "USD";
+            } else {
+                currencyType = null;
+                console.error("Unable to determine Currency Type");
+                return;
             }
 
             for (let i = 0; i < n && counter <= getCount; i += 2, counter++) {
