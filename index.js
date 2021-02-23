@@ -14,7 +14,7 @@ let getSum = (getCount) => {
     if (!(getCount)) {
         throw new Error("Argument missing");
     }
-    let url = 'https://playboard.co/en/youtube-ranking/most-superchatted-all-channels-in-worldwide-daily';
+    let url = 'https://playboard.co/en/youtube-ranking/most-superchatted-v-tuber-channels-in-worldwide-daily';
     console.log(`Fetch URL: ${url}`);
     console.log();
     fetch(url)
