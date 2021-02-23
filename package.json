@@ -2,7 +2,7 @@
   "name": "playboard-crawler",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ."
   },
   "main": "index.js",
   "repository": "https://github.com/edisonlee55/playboard-crawler.git",
