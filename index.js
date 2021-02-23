@@ -66,7 +66,7 @@ let getSum = (getCount) => {
                     console.log(`Sum: ${NTD(sum).format()}`);
                     break;
                 case "USD":
-                    console.log(`sum: ${USD(sum).format()}`);
+                    console.log(`Sum: ${USD(sum).format()}`);
                     break;
             }
         });
