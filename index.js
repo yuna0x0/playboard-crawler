@@ -1,3 +1,5 @@
+'use strict';
+
 const cheerio = require('cheerio');
 const fetch = require('node-fetch');
 const currency = require('currency.js');
@@ -8,7 +10,7 @@ const USD_REGEX = /^\$/;
 const NTD = value => currency(value, { symbol: 'NT$', precision: 0 });
 const NTD_REGEX = /^NT\$/;
 
-getSum = async (getCount) => {
+let getSum = (getCount) => {
     if (!(getCount)) {
         throw new Error("Argument missing");
     }
