@@ -14,7 +14,7 @@ let getSum = (getCount) => {
     if (!(getCount)) {
         throw new Error("Argument missing");
     }
-    let url = 'https://playboard.co/en/youtube-ranking/most-superchatted-v-tuber-channels-in-worldwide-daily';
+    let url = 'https://playboard.co/en/youtube-ranking/most-superchatted-all-channels-in-worldwide-daily';
     console.log(`Fetch URL: ${url}`);
     console.log();
     fetch(url)
@@ -47,8 +47,7 @@ let getSum = (getCount) => {
                 currencyType = "USD";
             } else {
                 currencyType = null;
-                console.error("Unable to determine Currency Type");
-                return;
+                throw new Error("Unable to determine Currency Type");
             }
 
             for (let i = 0; i < n && counter <= getCount; i += 2, counter++) {
